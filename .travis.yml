@@ -12,6 +12,8 @@ script:
 
 deploy:
   provider: elasticbeanstalk
+  edge:
+    branch: s3-backward-compact
   region: "ca-central-1"
   app: "docker-react"
   env: "Dockerreact-env"
