@@ -1,0 +1,10 @@
+sudo: required
+services:
+  - docker
+
+before_install: 
+  - docker build -t akash1412/docker-react-learning -f dockerfile.dev .
+
+
+script:
+  - docker run akash1412/docker-react-learning npm run test -- --coverage
