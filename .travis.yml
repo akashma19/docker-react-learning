@@ -7,4 +7,4 @@ before_install:
 
 
 script:
-  - docker run akash1412/docker-react-learning npm run test -- --coverage
+  - docker run -e CI=true akash1412/docker-react-learning npm run test -- --coverage
